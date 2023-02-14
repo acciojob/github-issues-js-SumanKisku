@@ -16,6 +16,7 @@ async function fetchIssues(pageNum) {
     // data is an array of issues. So, I'm iterating over all issues and returning the 
     // title only as an array and joining them together as a string
     container.innerHTML = data.map((issue)=> `<li>${issue.title}</li>`).join("");
+    // this commented is extra feature. If the page is on first page so don't show the prev button else show it
     // if(pageNum === 1) {
     //     loadPrev.style.display = "none";
     // } else {
